@@ -28,11 +28,11 @@ app.get('/', asyncMiddleware(async(req, res, next) => {
 }))
 app.listen(port, () => console.log(`oip-express listening on port ${port}`))
 
-// js-oip API calls recent tZERO DLR records
-let api = new DaemonApi();
+// js-oip API search for transactions related to Teton County Clerk
+let api = new DaemonApi('https://oip.mediciland.com/oip');
 const getFloData = async () => {
-    let query = '"Cancel" OR "Execution Report" OR "Client Interest" OR "Inventory Posted"'
-    let limit = 25
+    let query = 'FKvUqRc8qdJwMpy5Q22fLJ9qowQtbKW6aL'
+    let limit = 50
     let {success, txs, error} = await api.searchFloData(query, limit)
     let floData = ''
     return txs
