@@ -14,8 +14,9 @@
     "@babel/polyfill": "^7.2.5",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+    "bitcoinjs-lib": "^5.1.1",
     "express": "^4.16.4",
-    "js-oip": "^1.0.3",
+    "js-oip": "^1.0.4",
     "pug": "^2.0.3"
   },
   "devDependencies": {
