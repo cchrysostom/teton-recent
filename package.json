@@ -1,14 +1,20 @@
 {
-  "name": "oip-express",
+  "name": "teton-recent",
   "version": "1.0.0",
-  "description": "OIP webapp using js-oip and expressjs",
+  "description": "Recent Teton County records on FLO using OIP, js-oip, and expressjs",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "./node_modules/.bin/babel src --out-dir lib",
     "start": "node lib/index.js"
   },
-  "author": "Joseph Fiscella",
+  "contributors": [ {
+    "name": "Chris Chrysostom",
+    "email": "chris.chrysostom@gmail.com",
+    "url": "https://www.linkedin.com/in/cchrysostom/"
+  },
+  { "name": "Joseph Fiscella"}
+  ],
   "license": "ISC",
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
