@@ -1,8 +1,8 @@
-# oip-express
+# teton-recent
 
 ![FLO](public/example.png)
 
-oip-express is a simple webapp boilerplate using expressjs, pug, and js-oip to build a single-page FLO webapp. 
+teton-recent is a simple webapp displaying recent Teton County records posted to FLO Blockchain using OIP, expressjs, pug, and js-oip. 
 
 ## Install
 Clone this repository and use `npm install` to install oip-express.
@@ -32,8 +32,7 @@ npm run compile && npm start
 ```
 
 ## Contents
-Currently, this repo contains the Recent tZERO DLR Records webapp found at [https://floblockchain.org/tzero/](https://floblockchain.org/tzero/). 
-In the future these repos will be separated and the oip-express app will contain a simple boilerplate app retrieving an unfiltered list of the latest few OIP records.
+Currently, this application project contains the Recent Teton County records found at [Teton County Public Records](https://maps.greenwoodmap.com/tetonwy/clerk/query/). 
 
 ## Documentation
 Documentation for packages oip-express depends on can be found in the following repositories:
@@ -46,6 +45,7 @@ In particular, js-oip is the main driver behind oip-express; understanding how t
 ## Configuration
 Configuration is done through modifying `src/index.js` at the moment. In the future a configuration file is planned. 
 ```
-port = 3000
-oip-server = snowflake.oip.fun
+const port = 3000
+...
+let api = new DaemonApi('https://oip.mediciland.com/oip');
 ```
