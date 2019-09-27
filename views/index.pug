@@ -19,7 +19,7 @@ html(lang='en-GB')
   body
     div(id="top" class="floblockchain-header")
       h1
-        a(href="https://floblockchain.org") FLO Blockchain
+        a(href="http://livenet-explorer.floexperiments.com") FLO Blockchain
     div(style="text-align:center;")
       img(src="FLO.png" alt="FLO")
       div(class="floblockchain-text top")
@@ -41,9 +41,9 @@ html(lang='en-GB')
           td
             span(title=tx.tx.time)= tx.tx.timeago
           td
-            a(href=("http://network.flo.cash/tx/" + tx.tx.txid) target="_blank") #{tx.tx.txid.substring(0, 6) + "..."}
+            a(href=("http://livenet-explorer.floexperiments.com/tx/" + tx.tx.txid) target="_blank") #{tx.tx.txid.substring(0, 6) + "..."}
           td
-            a(href=("http://network.flo.cash/block/" + tx.tx.blockhash) target="_blank") #{tx.tx.blockhash.substring(0, 6) + "..."}
+            a(href=("http://livenet-explorer.floexperiments.com/block/" + tx.tx.blockhash) target="_blank") #{tx.tx.blockhash.substring(0, 6) + "..."}
     div(class="floblockchain-text")
       h2(id="whats-this") About
       p These are the recent Teton Countys recorded in the FLO blockchain. Click on the txid or block hash to navigate to the explorer for further research and verification of individual records.
