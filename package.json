@@ -8,12 +8,15 @@
     "compile": "./node_modules/.bin/babel src --out-dir lib",
     "start": "node lib/index.js"
   },
-  "contributors": [ {
-    "name": "Chris Chrysostom",
-    "email": "chris.chrysostom@gmail.com",
-    "url": "https://www.linkedin.com/in/cchrysostom/"
-  },
-  { "name": "Joseph Fiscella"}
+  "contributors": [
+    {
+      "name": "Chris Chrysostom",
+      "email": "chris.chrysostom@gmail.com",
+      "url": "https://www.linkedin.com/in/cchrysostom/"
+    },
+    {
+      "name": "Joseph Fiscella"
+    }
   ],
   "license": "ISC",
   "dependencies": {
