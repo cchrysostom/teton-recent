@@ -46,6 +46,6 @@ In particular, js-oip is the main driver behind oip-express; understanding how t
 Configuration is done through modifying `src/index.js` at the moment. In the future a configuration file is planned. 
 ```
 const port = 3000
-...
+
 let api = new DaemonApi('https://oip.mediciland.com/oip');
 ```
