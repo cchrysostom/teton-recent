@@ -25,7 +25,7 @@
     "babel-preset-env": "^1.7.0",
     "bitcoinjs-lib": "^5.1.1",
     "express": "^4.16.4",
-    "js-oip": "^1.0.4",
+    "js-oip": "^2.4.9",
     "pug": "^2.0.3"
   },
   "devDependencies": {
